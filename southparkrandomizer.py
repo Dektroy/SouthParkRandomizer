@@ -22,6 +22,6 @@ else:
 	episode = randint(1, 14)
 	#print("Saison : " + str(saison) + ", episode : " + str(episode))
 webbrowser.open('http://south-park-streaming.com/saison-' + str(saison) + "/episode-" + str(episode) + "/*")
-winsound.Beep(saison * 50, 50)
-winsound.Beep(episode * 50, 50)
+winsound.Beep(440, 100)
+winsound.Beep(1337, 50)
 	#test = raw_input("")
