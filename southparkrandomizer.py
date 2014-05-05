@@ -1,10 +1,6 @@
 from random import randint
-import winsound
+import winsound # Remove this line for portability
 import webbrowser
-
-test = ""
-
-#while not test:
 
 saison = randint(1, 17)
 episode = 0
@@ -20,8 +16,9 @@ elif saison == 17:
 	episode = randint(1, 10)
 else:
 	episode = randint(1, 14)
-	#print("Saison : " + str(saison) + ", episode : " + str(episode))
 webbrowser.open('http://south-park-streaming.com/saison-' + str(saison) + "/episode-" + str(episode) + "/*")
-winsound.Beep(440, 100)
+
+
+
+winsound.Beep(440, 100) # Remove these two lines for portability
 winsound.Beep(1337, 50)
-	#test = raw_input("")
